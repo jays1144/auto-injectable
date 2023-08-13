@@ -1,0 +1,9 @@
+안녕하세요. 항해 2기 김선용입니다. 항해 1기 금교석님과 함께 개발한 NestJS 라이브러리입니다.
+AutoInjectable은 NestJS에서 의존성 주입-DI-을 보다 쉽고 간편하게 사용할 수 있도록 설계된 유틸리티 라이브러리입니다. AutoInjectable을 사용하면 모듈 정의가 필요 없이 클래스에 의존성을 주입할 수 있습니다.
+스프링은 모듈의 정의 없이 DI가 가능합니다. 하지만 NestJS에서는 모듈을 만들어서 명시적으로 DI를 하게 되어있는데, 모듈 작성 자체가 처음 NestJS를 접하시는 분들에게는 진입장벽으로 다가오는 요소이기도 합니다. 이 점을 해결하기 위해 이 라이브러리를 개발하게 되었습니다.
+- 사용법
+1. 원하는 모듈 scope에 `@ComponentScan()` 데코레이터를 등록.
+2. DI를 할 서비스에 `@AutoInjectable()`을 등록.
+3. 끝.
+Controller도 비슷하게 @AutoController()를 등록하시면 자동으로 컨트롤러로써 동작합니다.
+https://www.npmjs.com/package/@tiny-nestjs/auto-injectable
